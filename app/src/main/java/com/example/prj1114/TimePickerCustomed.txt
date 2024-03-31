@@ -1,0 +1,59 @@
+import android.os.Parcelable
+import android.view.accessibility.AccessibilityEvent
+import android.view.autofill.AutofillValue
+import android.widget.TimePicker
+
+
+class TimePickerCustomed : TimePicker{
+    override fun setMinute(@IntRange(from = 0, to = 59) minute: Int) {
+        mDelegate.setMinute(MathUtils.constrain(minute, 0, 59))
+    }
+    override fun setCurrentMinute(currentMinute: Int) {
+        minute = currentMinute
+    }
+    internal interface TimePickerDelegate {
+        var hour: Int
+        var minute: Int
+
+        fun setDate(
+            @IntRange(from = 0, to = 23) hour: Int,
+            @IntRange(from = 0, to = 59) minute: Int
+        )
+
+        fun autofill(value: AutofillValue?)
+        val autofillValue: AutofillValue?
+
+        fun setIs24Hour(is24Hour: Boolean)
+        fun is24Hour(): Boolean
+        fun validateInput(): Boolean
+        fun setOnTimeChangedListener(onTimeChangedListener: OnTimeChangedListener?)
+        fun setAutoFillChangeListener(autoFillChangeListener: OnTimeChangedListener?)
+        var isEnabled: Boolean
+        val baseline: Int
+
+        fun onSaveInstanceState(superState: Parcelable?): Parcelable?
+        fun onRestoreInstanceState(state: Parcelable?)
+        fun dispatchPopulateAccessibilityEvent(event: AccessibilityEvent?): Boolean
+        fun onPopulateAccessibilityEvent(event: AccessibilityEvent?)
+
+        /** @hide
+         */
+        @get:TestApi
+        val hourView: View?
+
+        /** @hide
+         */
+        @get:TestApi
+        val minuteView: View?
+
+        /** @hide
+         */
+        @get:TestApi
+        val amView: View?
+
+        /** @hide
+         */
+        @get:TestApi
+        val pmView: View?
+    }
+}

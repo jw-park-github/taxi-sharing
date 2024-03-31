@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="출발 시간 선택" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:datePickerMode="calendar"
+        android:visibility="gone"/>
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:visibility="gone"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/btnSetTime"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="btnSetTime"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnSetPlace1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/btnSetPlace1"-->
+<!--        style="?android:borderlessButtonStyle" />-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="출발지 선택" />
+    <TextView
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/box_stroke"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:hint="출발지를 선택하세요"/>
+    <TextView
+        android:id="@+id/btnEnd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/box_stroke"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:hint="도착지를 선택하세요"/>
+<!--    <Button-->
+<!--        android:id="@+id/btnSetPlace2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/btnSetPlace2"-->
+<!--        style="?android:borderlessButtonStyle"/>-->
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSearch"/>
+</LinearLayout>

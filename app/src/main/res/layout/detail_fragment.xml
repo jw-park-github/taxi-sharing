@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="로딩화면"/>
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/box_stroke"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="HH:MM" />
+
+    <TextView
+        android:id="@+id/maxText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/box_stroke"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="2/4" />
+
+    <TextView
+        android:id="@+id/startText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/box_stroke"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="startlocation" />
+
+    <TextView
+        android:id="@+id/endText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/box_stroke"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="endlocation" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="view chat" />
+</LinearLayout>
