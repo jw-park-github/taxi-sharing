@@ -1,3 +1,5 @@
+<strong>[[최종 발표 보고서]](https://docs.google.com/presentation/d/1Z4JqRWb_bJ9chjXlaJHKi1FcEBBmONWTRP2w7cXDWvs/edit?usp=sharing)</strong><br>
+
 ### 변경된 파일 목록
 * register package 전체
 * RegisterViewModel.kt
