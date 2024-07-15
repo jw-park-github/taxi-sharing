@@ -1,5 +1,7 @@
 <br>
-><strong>[[최종 발표 보고서]](https://docs.google.com/presentation/d/1Z4JqRWb_bJ9chjXlaJHKi1FcEBBmONWTRP2w7cXDWvs/edit?usp=sharing)</strong><br>
+
+> <strong>[[최종 발표 보고서]](https://docs.google.com/presentation/d/1Z4JqRWb_bJ9chjXlaJHKi1FcEBBmONWTRP2w7cXDWvs/edit?usp=sharing)</strong><br>
+
 <br>
 
 ![1](https://github.com/user-attachments/assets/8a3bb4f1-f63d-4295-8ff4-8c6a7baf2014)
